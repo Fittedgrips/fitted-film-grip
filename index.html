@@ -187,8 +187,46 @@ text-align:center;
 color:#aaa;
 }
 
+/* ===== Statistics ===== */
+
+#stats{
+    padding:60px 20px;
+    background:#111;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.stat-box{
+    background:#1b1b1b;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+}
+
+.stat-box h2{
+    color:#f7b500;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    color:#ddd;
+    font-size:18px;
+}
 
 </style>
+
 
 </head>
 
@@ -230,6 +268,34 @@ color:#aaa;
 
     </div>
 </header>
+
+<section id="stats">
+
+<div class="stats-container">
+
+<div class="stat-box">
+<h2>24+</h2>
+<p>Productions</p>
+</div>
+
+<div class="stat-box">
+<h2>11</h2>
+<p>Key Grip Projects</p>
+</div>
+
+<div class="stat-box">
+<h2>13</h2>
+<p>Best Boy Grip Projects</p>
+</div>
+
+<div class="stat-box">
+<h2>100%</h2>
+<p>Commitment</p>
+</div>
+
+</div>
+
+</section>
 
 <section id="about">
 
